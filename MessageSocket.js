@@ -11,13 +11,13 @@ const CLIENT = "client";
 const NEW_CONNECTION = "new";
 const DO_ACTION = "do";
 
-/* const server = https.createServer({
-    key: fs.readFileSync('certs/ws.chat.dimodo.ga/key.pem'),
-    cert: fs.readFileSync('certs/ws.chat.dimodo.ga/fullchain.pem') 
+const server = https.createServer({
+    key: fs.readFileSync("certs/ws.notificaciones.dimodo.ga/key.pem"),
+    cert: fs.readFileSync("certs/ws.notificaciones.dimodo.ga/fullchain.pem"),
 });
- */
-const server = http.createServer();
 
+/* const server = http.createServer();
+ */
 const wssecure = new WebSocket.Server({
     server,
 });
